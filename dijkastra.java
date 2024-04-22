@@ -1,3 +1,4 @@
+class dijkastra{
 public long[] dijkastra(int src, ArrayList<Pair>[] graph){
     PriorityQueue<Pair> pq = new PriorityQueue<>();
     boolean[] visited = new boolean[graph.length];
@@ -17,3 +18,14 @@ public long[] dijkastra(int src, ArrayList<Pair>[] graph){
     }
     return dis;
   }
+}
+  class Pair implements Comparable<Pair>{
+    int src,wt;
+    Pair(int src, int wt){
+        this.src = src;
+        this.wt = wt;
+    }
+    public int compareTo(Pair p){
+        return this.wt - p.wt;
+    }
+}
