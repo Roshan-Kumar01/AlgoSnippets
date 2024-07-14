@@ -1,5 +1,4 @@
-public class segmentTree {
-public static class SegmentTree
+public class SegmentTree
 {
   int tree[];
   int arr[];
@@ -70,4 +69,4 @@ public static class SegmentTree
     return query(1,0,arr.length-1,l,r);
   }
 }
-}
+
